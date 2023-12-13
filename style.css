@@ -1,0 +1,81 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('your-pattern-image.jpg') repeat; /* Replace 'your-pattern-image.jpg' with your actual pattern image */
+  z-index: -1; /* Place the background behind other elements */
+}
+
+.container {
+  text-align: center;
+}
+
+.box {
+  max-width: 400px; /* Adjust the max-width to make the box larger */
+  border: 10px solid #d5b7ff; /* Light purple border */
+  border-radius: 20px; /* Border radius for a beveled look */
+  padding: 30px;
+  background-color: #fff; /* White background inside the box */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift effect */
+}
+
+.timer {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-family: 'Comic Sans MS', cursive; /* Cute font */
+  color: #ff6f61; /* Coral color for the cute text */
+}
+
+button {
+  font-size: 1em;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-family: 'Comic Sans MS', cursive; /* Cute font */
+  color: #fff; /* White text color for buttons */
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.start {
+  background-color: #8ac4d0; /* Light blue background color for start button */
+}
+
+.pause {
+  background-color: #ffa07a; /* Light salmon background color for pause button */
+}
+
+.reset {
+  background-color: #8ac4d0; /* Light blue background color for reset button */
+}
+
+button:hover {
+  background-color: #5e92a3; /* Darker blue on hover */
+}
+
+.bottom-container {
+  display: flex;
+  align-items: center; /* Align items to the center horizontally */
+  justify-content: flex-end; /* Align items to the bottom */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.cat {
+  width: 50px; /* Adjust the cat size as needed */
+  height: auto;
+  margin: 0 5px; /* Adjust margin as needed */
+  transition: transform 0.3s ease-out;
+}
